@@ -92,7 +92,7 @@ dotnet publish --configuration Release --no-restore
 ```
 
 ```Powershell
-Import-Module .\bin\Release\netstandard2.0\binary-powershell-cmdlet-example.dll -PassThru
+Import-Module .\src\bin\Release\netstandard2.0\binary-powershell-cmdlet-example.dll -PassThru
 
 # Output:
 #
