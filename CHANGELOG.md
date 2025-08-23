@@ -7,25 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- For new features.
+- New features 2
 
 ### Changed
 
-- For changes in existing functionality.
+- New changes 2
 
 ### Deprecated
 
-- For soon-to-be removed features.
+- nothing
 
 ### Removed
 
-- For now removed features.
+- nothing
 
 ### Fixed
 
-- For any bug fix.
+- New fixes 2
 
 ### Security
 
-- In case of vulnerabilities.
-
+- Nothing
