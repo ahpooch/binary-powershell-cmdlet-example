@@ -9,6 +9,9 @@ CopyPaths:
 #  - DSCResources
   # - Modules
 Encoding: UTF8
+
+SourcePath: binary-powershell-cmdlet-example.dll
+
 # Can be used to manually specify module's semantic version if the preferred method of
 # using GitVersion is not available, and it is not possible to set the session environment
 # variable `$env:ModuleVersion`, nor setting the variable `$ModuleVersion`, in the
