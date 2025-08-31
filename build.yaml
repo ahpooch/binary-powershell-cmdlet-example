@@ -10,7 +10,7 @@ CopyPaths:
   # - Modules
 Encoding: UTF8
 
-SourcePath: binary-powershell-cmdlet-example.dll
+#SourcePath: binary-powershell-cmdlet-example.dll
 
 # Can be used to manually specify module's semantic version if the preferred method of
 # using GitVersion is not available, and it is not possible to set the session environment
@@ -27,7 +27,7 @@ VersionedOutputDirectory: true
 #      ModuleBuilder Submodules Configuration      #
 ####################################################
 
-NestedModule:
+#NestedModule:
 #  HelperSubmodule: # This is the first submodule to build into the output
 #    Path: ./*/Modules/HelperSubmodule/HelperSubmodule.psd1
 #    #  is trimmed (remove metadata & Prerelease tag) and OutputDirectory expanded (the only one)
@@ -84,26 +84,26 @@ BuildWorkflow:
 #       PESTER  Configuration                      #
 ####################################################
 
-Pester:
-  OutputFormat: NUnitXML
+#Pester:
+  #OutputFormat: NUnitXML
   # Excludes one or more paths from being used to calculate code coverage.
-  ExcludeFromCodeCoverage:
+  #ExcludeFromCodeCoverage:
 
   # If no scripts are defined the default is to use all the tests under the project's
   # tests folder or source folder (if present). Test script paths can be defined to
   # only run tests in certain folders, or run specific test files, or can be use to
   # specify the order tests are run.
-  Script:
+  #Script:
   # - tests/QA/module.tests.ps1
   # - tests/QA
   # - tests/Unit
   # - tests/Integration
-  ExcludeTag:
+  #ExcludeTag:
   #  - helpQuality
   #  - FunctionalQuality
   #  - TestQuality
-  Tag:
-  CodeCoverageThreshold: 85 # Set to 0 to bypass
+  #Tag:
+  #CodeCoverageThreshold: 85 # Set to 0 to bypass
   #CodeCoverageOutputFile: JaCoCo_$OsShortName.xml
   #CodeCoverageOutputFileEncoding: ascii
   # Use this if code coverage should be merged from several pipeline test jobs.
@@ -144,8 +144,14 @@ TaskHeader: |
   Write-Build DarkGray "  $($Task.InvocationInfo.ScriptName):$($Task.InvocationInfo.ScriptLineNumber)"
   ""
 
+GitHubConfig:
+  GitHubFilesToAdd:
+    - 'CHANGELOG.md'
+  ReleaseAssets:
+    #- output/WikiContent.zip
+  GitHubConfigUserName: ahpooch
+  GitHubConfigUserEmail: ahpooch@hotmail.com
+  UpdateChangelogOnPrerelease: false
 
-
-
-
-
+GitConfigUserName: ahpooch
+GitConfigUserEmail: ahpooch@hotmail.com
