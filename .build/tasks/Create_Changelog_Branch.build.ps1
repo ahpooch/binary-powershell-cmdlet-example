@@ -166,7 +166,7 @@ task Create_Changelog_Branch {
     }
 
     # Track this branch on the remote 'origin
-    $pullArguments += @('-c', 'origin', $MainGitBranch, '--tag') # 'pull', 'http.sslbackend=schannel', 
+    $pullArguments += @('pull', '-c', 'http.sslbackend=schannel', 'origin', $MainGitBranch, '--tag')
 
     Sampler\Invoke-SamplerGit -Argument $pullArguments
 
@@ -238,7 +238,7 @@ task Create_Changelog_Branch {
     }
 
     # Track this branch on the remote 'origin
-    $pushArguments += @('-c', '-u', 'origin', $BranchName) # 'push', 'http.sslbackend=schannel', 
+    $pushArguments += @('push', '-c', 'http.sslbackend=schannel', '-u', 'origin', $BranchName)  
 
     Sampler\Invoke-SamplerGit -Argument $pushArguments
 
