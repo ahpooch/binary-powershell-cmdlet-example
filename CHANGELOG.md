@@ -5,6 +5,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- trying to bump to 0.1.7
+
 ## [0.1.6] - 2025-09-05
 
 ### Added
