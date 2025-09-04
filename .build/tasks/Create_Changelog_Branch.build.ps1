@@ -87,11 +87,11 @@ param
 
     [Parameter()]
     [string]
-    $GitConfigUserEmail = (property GitConfigUserEmail ''),
+    $GitConfigUserEmail = (property GitConfigUserEmail '81159041+ahpooch@users.noreply.github.com'),
 
     [Parameter()]
     [string]
-    $GitConfigUserName = (property GitConfigUserName ''),
+    $GitConfigUserName = (property GitConfigUserName 'ahpooch'),
 
     [Parameter()]
     $ChangelogFilesToAdd = (property ChangelogFilesToAdd @('CHANGELOG.md')),
