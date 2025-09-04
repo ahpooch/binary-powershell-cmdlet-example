@@ -1,5 +1,5 @@
 using System.Management.Automation;           // Windows PowerShell namespace.
-
+//changes
 namespace BinaryPowershellCmdletExample
 {
   [Cmdlet(VerbsDiagnostic.Test,"BinaryModuleCmdlet1")]
