@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - New changes 2
 - Commit to be tagged 0.1.3
-- v0.1.5
+- v0.1.5 !
 
 ### Deprecated
 
